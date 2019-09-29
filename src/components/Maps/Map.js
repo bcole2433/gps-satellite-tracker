@@ -5,7 +5,7 @@ import SatInfo from './satInfo';
 import Loading from '../Loading/loading';
 import satIcon from '../../images/satellite_icon.png';
 import Skeleton from '@material-ui/lab/Skeleton';
-import 'mapbox-gl/dist/mapbox-gl.css'
+import 'mapbox-gl/dist/mapbox-gl.css';
 
 const mapToken = process.env.REACT_APP_MAPBOXGL_ACCESS_TOKEN;
 const geolocateStyle = {
@@ -15,7 +15,6 @@ const geolocateStyle = {
 };
 
 const Map = ({ context }) => {
-  const [loading, setLoading] = useState(false);
   const {
     mapLoading,
     satellites,
@@ -28,14 +27,15 @@ const Map = ({ context }) => {
     height: 400,
     latitude: 38.9072,
     longitude: -77.0369,
-    zoom: 3,
-    bearing: 0,
-    pitch: 0
-
+    zoom: 4,
   });
+
+  const [loading, setLoading] = useState(false);
   const [popupInfo, setPopupInfo] = useState(null);
+
   const onViewportChange = viewport => setViewPort({
-    ...viewport,
+     ...viewport,
+     maxZoom: 6,
     transitionDuration: 300
   });
 

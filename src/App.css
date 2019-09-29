@@ -18,7 +18,7 @@
 }
 
 body {
-  margin-bottom: 160px !important; /* Height of the footer */
+  margin-bottom: 30px !important; /* Height of the footer */
   padding: 0;
 }
 
@@ -42,7 +42,7 @@ h2 {
 h3 {
   font-size: 1.5em;
   line-height: 1;
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
 }
 h4 {
   font-size: 1.2em;
@@ -81,8 +81,6 @@ p{
   color: var(--primaryColor);
   background: transparent;
   padding: 0.7rem 0.7rem;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
   border: 1px solid var(--primaryColor);
   border-radius: 18px;
   transition: var(--mainTransition);
@@ -94,7 +92,7 @@ p{
 }
 .loading {
   text-align: center;
-  margin-top: 0.1rem;
+  margin-top: 0.5rem;
 }
 /* Navbar */
 .navbar {
@@ -114,7 +112,7 @@ p{
   display: none;
 }
 .nav-center {
-  max-width: 1170px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
 }
@@ -144,17 +142,13 @@ p{
 .section-title {
   text-align: center;
   margin-bottom: 0rem;
-}
-.section-btn {
-  text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  align-items: top;
 }
 .section-title h4 {
   font-size: 1.5rem;
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0rem;
 }
 .section-title p {
   font-size: 1rem;
@@ -168,22 +162,20 @@ p{
   background: var(--primaryColor);
 }
 /* end of Sections */
-.cardRoot {
-  width: 70%,
-}
 
 /* Card */
 .card {
-  margin-top: 1rem;
+  margin-top: 0rem;
   margin-bottom: 0rem;
-  overflow-x: auto;
-  width: 100%;
+  overflow-x: scroll;
+  width: 90%;
   border-radius: 10px 10px 10px 10px;
   box-shadow: 4px 4px 8px 4px rgba(170, 170, 170, 0.2);
   transition: 0.3s;
+  align-items: top;
 }
 .cardTable {
-  min-width: 1000px;
+  min-width: 400px;
 }
 
 /* On mouse-over, add a deeper shadow */

@@ -1,5 +1,5 @@
 import React from 'react';
-import {
+import { 
     Table, TableBody,
     TableCell, TableHead, TableRow
 } from '@material-ui/core';
@@ -9,11 +9,10 @@ const SatInfo = ({ satellite }) => {
     const row1 = 'ID';
     const rows = ['Name', 'Latitude', 'Longitude', 'Azimuth', 'Elevation', 'Right Ascension', 'Decline'];
     return (
-        <div classname='cardRoot'>
         <div className='card'>
             <Table className='cardTable'>
                 <TableHead>
-                    <TableRow>
+                    <TableRow variant='head'>
                         <TableCell align='left'>{row1}</TableCell>
                         {rows.map((row, index) => (
                             <TableCell align='right' key={index}>{row}</TableCell>
@@ -33,7 +32,6 @@ const SatInfo = ({ satellite }) => {
                     </TableRow>
                 </TableBody>
             </Table>
-        </div>
         </div>
     )
 }

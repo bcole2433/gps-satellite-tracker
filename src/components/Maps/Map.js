@@ -88,7 +88,7 @@ const Map = ({ context }) => {
             <button
               className='btn-primary'
               onClick={onResetButtonClick}
-            >Click To Update Data</button>
+            >Update Data</button>
           }
         </div>
         {mapLoading ? (
